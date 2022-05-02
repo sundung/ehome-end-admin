@@ -20,11 +20,13 @@
   },
   "lint-staged": {
     "*.{js,ts}": [
-          "npm run eslint",
-          "npm run prettier"
+      "npm run eslint",
+      "npm run prettier"
     ]
   },
   "dependencies": {
+    "@babel/core": "^7.0.0",
+    "@vue/cli-service": "^5.0.4",
     "@vueuse/core": "^8.3.1",
     "axios": "^0.27.2",
     "pinia": "^2.0.13",

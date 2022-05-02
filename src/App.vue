@@ -1,2 +1,2 @@
  
-<template>   <RouterView />  </template>
+<template>    <RouterView />  </template>
