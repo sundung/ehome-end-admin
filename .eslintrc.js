@@ -18,7 +18,14 @@ module.exports = {
 
   rules: {
     // override/add rules settings here, such as:
-    // indent: ['error', 2], // 缩进
+    // 使用两个空格进行缩进，
+    // indent: [
+    //   2,
+    //   2,
+    //   {
+    //     SwitchCase: 1, // case 针对 switch 语句使用 2 个空格缩进
+    //   },
+    // ],
     'vue/multi-word-component-names': 'off',
   },
 };
