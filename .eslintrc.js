@@ -18,7 +18,7 @@ module.exports = {
 
   rules: {
     // override/add rules settings here, such as:
-    indent: ['off', 2], // 缩进
+    // indent: ['error', 2], // 缩进
     'vue/multi-word-component-names': 'off',
   },
 };
