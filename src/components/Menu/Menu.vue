@@ -10,48 +10,50 @@
         @open="handleOpen"
         @close="handleClose"
       >
-        <el-sub-menu index="1">
+        <el-menu-item index="1" @click="router.push('/order')">
           <template #title>
             <el-icon><grid /></el-icon>
             <span>订单管理</span>
           </template>
-        </el-sub-menu>
-        <el-sub-menu index="2">
+        </el-menu-item>
+        <el-menu-item index="2">
           <template #title>
             <el-icon><user /></el-icon>
             <span>用户管理</span>
           </template>
-        </el-sub-menu>
-        <el-sub-menu index="3">
+        </el-menu-item>
+        <el-menu-item index="3">
           <template #title>
             <el-icon><user-filled /></el-icon>
             <span>师傅管理</span>
           </template>
-        </el-sub-menu>
-        <el-sub-menu index="4">
+        </el-menu-item>
+        <el-menu-item index="4">
           <template #title>
             <el-icon><document-copy /></el-icon>
             <span>维修类别管理</span>
           </template>
-        </el-sub-menu>
-        <el-sub-menu index="5">
+        </el-menu-item>
+        <el-menu-item index="5">
           <template #title>
             <el-icon><tools /></el-icon>
             <span>配件管理</span>
           </template>
-        </el-sub-menu>
-        <el-sub-menu index="6">
+        </el-menu-item>
+        <el-menu-item index="6">
           <template #title>
             <el-icon><document /></el-icon>
             <span>结算管理</span>
           </template>
-        </el-sub-menu>
+        </el-menu-item>
       </el-menu>
     </el-col>
   </el-row>
 </template>
 
 <script lang="ts" setup>
+import { useRouter } from 'vue-router';
+const router = useRouter();
 const handleOpen = (key: string, keyPath: string[]) => {
   console.log(key, keyPath);
 };

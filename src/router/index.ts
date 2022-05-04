@@ -24,7 +24,10 @@ const routes: Array<RouteRecordRaw> = [
       requireAuth: true,
     },
     component: () => import('@/pages/HomePage.vue'),
-    children: [{ path: '/welcome', name: 'Welcome', component: () => import('@/components/Welcome.vue') }],
+    children: [
+      { path: '/welcome', name: 'Welcome', component: () => import('@/components/Welcome.vue') },
+      { path: '/order', name: 'Order', component: () => import('@/pages/order/Order.vue') },
+    ],
   },
 ];
 

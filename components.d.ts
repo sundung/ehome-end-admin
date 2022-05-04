@@ -18,10 +18,16 @@ declare module '@vue/runtime-core' {
     ElMenu: typeof import('element-plus/es')['ElMenu'];
     ElMenuItem: typeof import('element-plus/es')['ElMenuItem'];
     ElMenuItemGroup: typeof import('element-plus/es')['ElMenuItemGroup'];
+    ElOption: typeof import('element-plus/es')['ElOption'];
+    ElPagination: typeof import('element-plus/es')['ElPagination'];
     ElRow: typeof import('element-plus/es')['ElRow'];
+    ElSelect: typeof import('element-plus/es')['ElSelect'];
     ElSubMenu: typeof import('element-plus/es')['ElSubMenu'];
+    ElTable: typeof import('element-plus/es')['ElTable'];
+    ElTableColumn: typeof import('element-plus/es')['ElTableColumn'];
     Header: typeof import('./src/components/Header.vue')['default'];
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default'];
+    Menu: typeof import('./src/components/Menu/Menu.vue')['default'];
     RouterLink: typeof import('vue-router')['RouterLink'];
     RouterView: typeof import('vue-router')['RouterView'];
     UsePina: typeof import('./src/components/usePina.vue')['default'];
