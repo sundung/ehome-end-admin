@@ -4,6 +4,11 @@
         "node_modules/@types", // 默认值
         "src/types"
      ],
+     "baseUrl": ".",
+     "paths": {
+      "@/*": [ "src/*" ],
+    },
+    "types": ["element-plus/global"],
     "target": "esnext",
     "useDefineForClassFields": true,
     "module": "esnext",
@@ -17,6 +22,6 @@
     "lib": ["esnext", "dom"],
     "skipLibCheck": true
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "shim.d.ts", "vite.config.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
