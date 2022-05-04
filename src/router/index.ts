@@ -27,6 +27,7 @@ const routes: Array<RouteRecordRaw> = [
     children: [
       { path: '/welcome', name: 'Welcome', component: () => import('@/components/Welcome.vue') },
       { path: '/order', name: 'Order', component: () => import('@/pages/order/Order.vue') },
+      { path: '/user', name: 'UserManage', component: () => import('@/pages/userManage/UserManage.vue') },
     ],
   },
 ];

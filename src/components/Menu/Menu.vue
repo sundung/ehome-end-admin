@@ -16,7 +16,7 @@
             <span>订单管理</span>
           </template>
         </el-menu-item>
-        <el-menu-item index="2">
+        <el-menu-item index="2" @click="router.push('/user')">
           <template #title>
             <el-icon><user /></el-icon>
             <span>用户管理</span>

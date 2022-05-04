@@ -15,7 +15,7 @@
           <el-option v-for="item in homeApplianceType" :key="item.value" :label="item.label" :value="item.value" />
         </el-select>
       </el-col>
-      <el-col :span="4" class="headerSearch">
+      <el-col :span="5" class="headerSearch">
         <div class="text">服务状态</div>
         <el-select v-model="serviceStatusValue" class="m-2" placeholder="请选择" size="large">
           <el-option v-for="item in serviceStatus" :key="item.value" :label="item.label" :value="item.value" />
@@ -41,7 +41,7 @@
       <el-table-column prop="repairNumber" label="报修数量" width="100" />
       <el-table-column prop="problemDescription" label="问题描述" width="100" />
       <el-table-column prop="repairDate" label="报修时间" width="100" />
-      <el-table-column prop="orderDate" label="预约上门时间" width="100" />
+      <el-table-column prop="orderDate" label="预约上门时间" width="140" />
       <el-table-column prop="serviceStatus" label="服务状态" width="100" />
       <el-table-column prop="cancelDescription" label="取消描述" width="100" />
       <el-table-column prop="orderMaster" label="接单师傅" width="100" />
@@ -49,7 +49,7 @@
       <el-table-column prop="receiveOrderDate" label="接单时间" width="100" />
       <el-table-column prop="goHomeDate" label="上门时间" width="100" />
       <el-table-column prop="endTime" label="结束时间" width="100" />
-      <el-table-column prop="orderAmount" label="订单金额（￥)" width="100" />
+      <el-table-column prop="orderAmount" label="订单金额（￥)" width="140" />
       <el-table-column prop="maintenanceServiceCharge" label="维修服务费" width="100" />
       <el-table-column prop="materialsExpenses" label="材料费" width="100" />
       <el-table-column prop="materialCost" label="材料成本价" width="100" />
@@ -143,6 +143,7 @@ const tableData = reactive([
 .tableArea {
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
   .pagination {
     margin-top: 20px;
     display: flex;
