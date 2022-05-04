@@ -25,6 +25,7 @@ declare module '@vue/runtime-core' {
     RouterLink: typeof import('vue-router')['RouterLink'];
     RouterView: typeof import('vue-router')['RouterView'];
     UsePina: typeof import('./src/components/usePina.vue')['default'];
+    Welcome: typeof import('./src/components/Welcome.vue')['default'];
   }
 }
 

@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
-
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
@@ -18,12 +17,14 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/home',
     name: 'HomePage',
+    redirect: '/welcome',
     meta: {
       title: 'home',
       keepAlive: true,
       requireAuth: true,
     },
     component: () => import('@/pages/HomePage.vue'),
+    children: [{ path: '/welcome', name: 'Welcome', component: () => import('@/components/Welcome.vue') }],
   },
 ];
 
