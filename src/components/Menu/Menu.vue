@@ -22,7 +22,7 @@
             <span>用户管理</span>
           </template>
         </el-menu-item>
-        <el-menu-item index="3">
+        <el-menu-item index="3" @click="router.push('/masterManage')">
           <template #title>
             <el-icon><user-filled /></el-icon>
             <span>师傅管理</span>
