@@ -11,10 +11,4 @@
 
 <script lang="ts" setup>
 import Menu from './Menu/Menu.vue';
-const handleOpen = (key: string, keyPath: string[]) => {
-  console.log(key, keyPath);
-};
-const handleClose = (key: string, keyPath: string[]) => {
-  console.log(key, keyPath);
-};
 </script>
