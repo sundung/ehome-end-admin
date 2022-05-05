@@ -5,7 +5,7 @@
         active-text-color="#ffd04b"
         background-color="#545c64"
         class="el_menu"
-        default-active="2"
+        default-active="1"
         text-color="#fff"
         @open="handleOpen"
         @close="handleClose"
@@ -34,7 +34,7 @@
             <span>维修类别管理</span>
           </template>
         </el-menu-item>
-        <el-menu-item index="5">
+        <el-menu-item index="5" @click="router.push('/accessoriesManage')">
           <template #title>
             <el-icon><tools /></el-icon>
             <span>配件管理</span>

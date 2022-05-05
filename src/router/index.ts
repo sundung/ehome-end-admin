@@ -29,6 +29,11 @@ const routes: Array<RouteRecordRaw> = [
       { path: '/order', name: 'Order', component: () => import('@/pages/order/Order.vue') },
       { path: '/user', name: 'UserManage', component: () => import('@/pages/userManage/UserManage.vue') },
       { path: '/masterManage', name: 'MasterManage', component: () => import('@/pages/masterManage/MasterManage.vue') },
+      {
+        path: '/accessoriesManage',
+        name: 'AccessoriesManage',
+        component: () => import('@/pages/accessoriesManage/AccessoriesManage.vue'),
+      },
     ],
   },
 ];
