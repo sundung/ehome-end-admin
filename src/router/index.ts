@@ -34,6 +34,11 @@ const routes: Array<RouteRecordRaw> = [
         name: 'AccessoriesManage',
         component: () => import('@/pages/accessoriesManage/AccessoriesManage.vue'),
       },
+      {
+        path: '/maintainCategoryManage',
+        name: 'MaintainCategoryManage',
+        component: () => import('@/pages/maintainCategoryManage/MaintainCategoryManage.vue'),
+      },
     ],
   },
 ];

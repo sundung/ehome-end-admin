@@ -28,7 +28,7 @@
             <span>师傅管理</span>
           </template>
         </el-menu-item>
-        <el-menu-item index="4">
+        <el-menu-item index="4" @click="router.push('/maintainCategoryManage')">
           <template #title>
             <el-icon><document-copy /></el-icon>
             <span>维修类别管理</span>

@@ -28,6 +28,7 @@
   </div>
   <div class="tableArea">
     <el-table class="table" :data="tableData" border style="width: 100%">
+      <el-table-column type="index" label="序号" width="80" />
       <el-table-column prop="customerNo" label="客户编号" width="120" />
       <el-table-column prop="name" label="姓名" width="120" />
       <el-table-column prop="customerIphoneNum" label="客户手机号" width="120" />

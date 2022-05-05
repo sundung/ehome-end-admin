@@ -3,7 +3,7 @@
     <el-row :gutter="20">
       <el-col :span="5" class="headerSearch">
         <div class="text">配件名称</div>
-        <el-input v-model="masterSearch" placeholder="请输入配件名称,搜索" />
+        <el-input v-model="accessoriesSearch" placeholder="请输入配件名称,搜索" />
       </el-col>
       <el-col :span="7" class="headerSearch">
         <div class="text">维修家电类型</div>
@@ -27,6 +27,7 @@
   </div>
   <div class="tableArea">
     <el-table class="table" :data="tableData" border style="width: 100%">
+      <el-table-column type="index" label="序号" width="80" />
       <el-table-column prop="accessoriesName" label="配件名称" width="120" />
       <el-table-column prop="belongsType" label="所属类型" width="120" />
       <el-table-column prop="secondaryClassification" label="二级分类" width="120" />
@@ -49,9 +50,9 @@
 <script lang="ts" setup>
 import { reactive, ref } from 'vue';
 
-const masterSearch = ref(''); // 客户搜索
-const homeApplianceTypeValue = ref(''); // 师傅搜索
-const serviceStatusValue = ref(''); // 师傅搜索
+const accessoriesSearch = ref(''); // 配件名称搜索
+const homeApplianceTypeValue = ref(''); // 维修家电类型
+const serviceStatusValue = ref(''); // 服务状态
 const homeApplianceType = reactive([
   {
     value: '空调',
